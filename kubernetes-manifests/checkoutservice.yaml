@@ -24,6 +24,8 @@ spec:
     metadata:
       labels:
         app: checkoutservice
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
     spec:
       serviceAccountName: default
       securityContext:

@@ -24,6 +24,8 @@ spec:
     metadata:
       labels:
         app: shippingservice
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
     spec:
       serviceAccountName: default
       securityContext:

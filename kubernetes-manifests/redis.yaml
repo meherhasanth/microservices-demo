@@ -24,6 +24,8 @@ spec:
     metadata:
       labels:
         app: redis-cart
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
     spec:
       securityContext:
         fsGroup: 1000

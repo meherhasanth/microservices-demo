@@ -24,6 +24,8 @@ spec:
     metadata:
       labels:
         app: currencyservice
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5

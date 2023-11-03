@@ -26,6 +26,7 @@ spec:
         app: loadgenerator
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        consul.hashicorp.com/connect-inject: "true"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
